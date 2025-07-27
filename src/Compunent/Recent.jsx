@@ -47,26 +47,26 @@ function Recent() {
     <section className='flex juatify-center items-center'>
    <div className='flex  gap-5 '>
     {activitis.map((even,index)=>(
-      <div key={index} className=' bg-[#F8F8F8]'>
-        <div className='flex'>
-            {even.user}
-            <div >
-                <p>{even.userName}</p>
-                <p>{even.userLocation}</p>
+      <div key={index} className=' bg-[#F8F8F8] rounded-2xl p-4 py-6'>
+        <div className='flex gap-10 p-2'>
+                <span className='bg-white p-3 rounded-full'>  {even.user} </span>
+            <div>
+                <p className='font-bold'>{even.userName}</p>
+                <p className='text-gray-400'>{even.userLocation}</p>
             </div>
         </div>
-        <div className='flex'>
+        <div className='flex gap-4 py-5'>
             <img src={even.star} alt="" />
-            <p>{even.date}</p>
+            <p className='text-gray-600'>{even.date}</p>
         </div>
-        <p>{even.pera1}</p>
-        <p>{even.pera2}</p>
-        <img src={even.img} alt="" />
-        <u>{even.discover}</u>
+        <p className='text-gray-600 py-5'>{even.pera1}</p>
+        <p className='text-gray-600'>{even.pera2}</p>
+        <img className=' py-8' src={even.img} alt="" />
+        <u className='font-bold'>{even.discover}</u>
       </div>
     ))}
    </div>
-   <div> <ArrowForwardIcon /> </div>
+   <div> <button className='p-4 bg-gray-400 rounded-full opacity-100 hover:opacity-80 transition-colors cursor-pointer'> <ArrowForwardIcon /> </button> </div>
     </section>
 
     </>
