@@ -10,6 +10,8 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import Button from '@mui/material/Button';  
 import LanguageIcon from '@mui/icons-material/Language';
 import DensityMediumIcon from '@mui/icons-material/DensityMedium';
+import Restruents from './Restruents';
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -55,8 +57,10 @@ function Navbur() {
   const toggleBtn = ()=>{
     setstat(!stat)
   }
-  
+
+
   return (
+
     <>
     <div className='bg-[#FFFFFF] '>
 
@@ -90,14 +94,13 @@ function Navbur() {
                   />
                 </Search>
                 <Search className='border-l'>
-                  <SearchIconWrapper>
-                  
-                  </SearchIconWrapper>
+                
                   <StyledInputBase
                     placeholder="singapur"
                     inputProps={{ 'aria-label': 'search' }}
                   />
-                    <SearchIcon className='text-black bg-gray-300 rounded-2xl '/>
+                    <SearchIcon  className='text-black bg-gray-300 rounded-2xl '/>
+                    
                 </Search>
               </div>
           

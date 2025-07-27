@@ -44,8 +44,8 @@ function Recent() {
   return (
     <>
     
-    <section className='flex juatify-center items-center'>
-   <div className='flex  gap-5 '>
+    <section className='md:flex juatify-center items-center'>
+   <div className='md:flex  gap-5 '>
     {activitis.map((even,index)=>(
       <div key={index} className=' bg-[#F8F8F8] rounded-2xl p-4 py-6'>
         <div className='flex gap-10 p-2'>
@@ -66,7 +66,7 @@ function Recent() {
       </div>
     ))}
    </div>
-   <div> <button className='p-4 bg-gray-400 rounded-full opacity-100 hover:opacity-80 transition-colors cursor-pointer'> <ArrowForwardIcon /> </button> </div>
+   <div className='flex justify-center items-center'> <button className='p-4 bg-gray-400 rounded-full  opacity-100 hover:opacity-80 transition-colors cursor-pointer'> <ArrowForwardIcon /> </button> </div>
     </section>
 
     </>
