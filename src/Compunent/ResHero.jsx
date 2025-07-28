@@ -8,7 +8,7 @@ function ResHero() {
     <div className='py-4 px-10'><p>Home / BellaItalia</p></div>
     <div className='bg-[url(img/Rhero.png)]  w-full    h-auto bg-no-repeat  '>
      
-     <div className='text-white  w-[50%] py-10 bg-gradient-to-l from-gray-0 to-gray-600  pl-50  pr-7'>
+     <div className='text-white w-[90%] md:w-[50%] py-10 bg-gradient-to-l from-gray-0 to-gray-600  pl-8 md:pl-50  pr-7'>
           <h1 className='text-5xl font-bold py-5'>Bella italia</h1>
           <div className='flex gap-3  '>
             <img src="img/star.png" alt="" />
@@ -26,10 +26,12 @@ The lorem ipsum is, in printing, a series of meaningless words used temporarily 
                 <p>7j/7, 08:00 - 22:00 </p>
             </div>
             
+            
      </div>
      
 
     </div>
+    <div className='-mt-10 flex w-full justify-center items-center'><img src="img/Rlogo.png" alt="" /></div>
     </section>
   )
 }
