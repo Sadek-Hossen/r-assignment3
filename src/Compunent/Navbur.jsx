@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
+import { useNavigate } from 'react-router-dom';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -50,6 +51,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
+
 function Navbur() {
   
   const [stat, setstat]= useState(false);
@@ -57,6 +59,10 @@ function Navbur() {
   const toggleBtn = ()=>{
     setstat(!stat)
   }
+const navigate = useNavigate();
+const handelar =()=>{
+  navigate('/Restruents')
+}
 
 
   return (
@@ -99,7 +105,7 @@ function Navbur() {
                     placeholder="singapur"
                     inputProps={{ 'aria-label': 'search' }}
                   />
-                    <SearchIcon  className='text-black bg-gray-300 rounded-2xl '/>
+                    <SearchIcon onClick={handelar}  className='text-black bg-gray-300 rounded-2xl '/>
                     
                 </Search>
               </div>
